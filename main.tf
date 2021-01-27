@@ -1,6 +1,6 @@
 terraform {
   required_providers {
-    azurerm = ">= 2.10.1"
+    azurerm = ">= 2.10.0"
   }
 }
 
@@ -14,10 +14,10 @@ variable "tid" {
 }
 
 provider "azurerm" {
-#  subscription_id = var.subid
-#  client_id       = var.appid
-#  client_secret   = var.appsec
-#  tenant_id       = var.tid
+  subscription_id = var.subid
+  client_id       = var.appid
+  client_secret   = var.appsec
+  tenant_id       = var.tid
   features {}
 }
 
