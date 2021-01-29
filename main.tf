@@ -12,6 +12,10 @@ variable "appsec" {
 }
 variable "tid" {
 }
+variable "tid1" {
+}
+
+tid1 = "hello"
 
 provider "azurerm" {
   subscription_id = var.subid
@@ -27,6 +31,6 @@ resource "azurerm_resource_group" "jjjjj-rg" {
 }
 
 resource "azurerm_resource_group" "ttttt-rg" {
-  name     = "ttttt-rg"
+  name     = var.tid1
   location = "North Central US"
 }
